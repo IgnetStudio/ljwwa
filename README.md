@@ -12,8 +12,13 @@ SVG based page written in HTML/CSS/JS about Ljubljana & Warszawa.
 
 info@ignet.com.pl
 
+## Credits
+
+- [Petar Perčić](https://www.behance.net/percic25a9e1)
+- [jQuery DrawSVG](https://github.com/lcdsantos/jquery-drawsvg)
+
 ## To Do
 
-- [ ] animation
 - [ ] demo
-- [ ] credits
+- [x] animation
+- [x] credits
