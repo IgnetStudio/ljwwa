@@ -1,2 +1,7 @@
 # ignore node dependency directories
 node_modules/
+
+# ignore editor settings
+.vscode
+.DS_Store
+.idea

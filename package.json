@@ -1,0 +1,27 @@
+{
+  "name": "ljwwa",
+  "version": "1.0.0",
+  "description": "Ljubljana & Warszawa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnetStudio/ljwwa.git"
+  },
+  "keywords": [
+    "svg",
+    "lj",
+    "wwa"
+  ],
+  "author": "ignet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgnetStudio/ljwwa/issues"
+  },
+  "homepage": "https://github.com/IgnetStudio/ljwwa#readme",
+  "devDependencies": {
+    "svgi": "^1.1.0"
+  }
+}
