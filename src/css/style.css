@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .vector-fill-green {
     fill: #0d8a44;
 }

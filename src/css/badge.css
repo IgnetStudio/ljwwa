@@ -1,3 +1,7 @@
+.vector-counter-text::before {
+    content: "Animation starts in: ";
+}
+
 .st13 {
     clip-path: url(#SVGID_2_);
 }
