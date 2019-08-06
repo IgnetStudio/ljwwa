@@ -19,9 +19,9 @@ info@ignet.com.pl
 
 ## To Do
 
-- [ ] SVG size
 - [ ] advanced animation
+- [ ] letters
 - [ ] demo
+- [x] SVG size
 - [x] badge
 - [x] basic animation
-- [x] credits

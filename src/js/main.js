@@ -6,7 +6,7 @@
 
 // ANIMATE SVG
 
-var $svg = $('svg').drawsvg({
+const $svg = $('svg').drawsvg({
     callback: function () {
         animate();
     }
@@ -20,33 +20,31 @@ animate();
 
 // SET COUNTER
 
+let indexBar = 7;
+const progressCount = setInterval(function () {
+    // display progress bar
+    let bar = document.getElementById("vector-badge-progress");
+    bar.value = 7 - indexBar;
+    // decrement
+    indexBar--;
+    console.log(`indexBar: ${indexBar}`);
+    // stop count
+    if (indexBar < 0) {
+        clearInterval(progressCount);
+    }
+}, 1000);
+
 let indexTime = 7;
-let displayDigit = "";
-const counterWrapper = document.querySelector(".vector-counter-wrapper");
-
-function incrementCount() {
-    setInterval(function () {
-        // clear count
-        while (counterWrapper.hasChildNodes()) {
-            counterWrapper.removeChild(counterWrapper.lastChild);
-        }
-        indexTime++;
-        if (indexTime > 7) {
-            console.log(indexTime);
-            indexTime = 0; // reset count
-        } else {
-            console.log('reset');
-        }
-
-        displayDigit = indexTime.toString();
-        for (let i = 0; i < displayDigit.length; i++) {
-            const dynamicSpan = document.createElement('span');
-            dynamicSpan.className = 'vector-counter-text';
-            dynamicSpan.innerText = displayDigit[i];
-            counterWrapper.appendChild(dynamicSpan);
-            console.log(dynamicSpan);
-        }
-    }, 1000);
-}
-
-incrementCount();
+const textCount = setInterval(function () {
+    // display info
+    let info = document.getElementById("vector-counter-number");
+    info.innerHTML = indexTime + " seconds remaining";
+    // decrement
+    indexTime--;
+    console.log(`indexTime: ${indexTime}`);
+    // stop count
+    if (indexTime < 0) {
+        document.getElementById("vector-counter-number").innerHTML = "Infinite animation triggered"
+        clearInterval(textCount);
+    }
+}, 1000);

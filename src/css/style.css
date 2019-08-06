@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Blinker:100,400,700&display=swap');
+
+html {
+    overflow: hidden;
+}
+
 body {
-    margin: 0;
+    overflow: hidden;
+    font-family: 'Blinker', sans-serif;
 }
 
 .vector-fill-green {

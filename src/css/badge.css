@@ -1,65 +1,92 @@
-.vector-counter-text::before {
-    content: "Animation starts in: ";
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(20px);
+        filter: blur(20px);
+    }
+
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
 }
 
-.st13 {
+@keyframes blur {
+    0% {
+        -webkit-filter: blur(20px);
+        filter: blur(20px);
+    }
+
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+}
+
+.vector-badge__ljwwa {
+    width: 157vw;
+    margin-left: -29vw;
+    -webkit-animation: blur 6.5s 1;
+    animation: blur 6.5s 1;
+}
+
+.vector-path-13 {
     clip-path: url(#SVGID_2_);
 }
 
-.st14 {
-    fill: #FFCB05;
+.vector-path-14 {
+    fill: #ffcb05;
 }
 
-.st15 {
-    fill: #D9A49B;
+.vector-path-15 {
+    fill: #d9a49b;
 }
 
-.st16 {
-    fill: #BD2826;
+.vector-path-16 {
+    fill: #bd2826;
 }
 
-.st17 {
-    fill: #8F9AAF;
+.vector-path-17 {
+    fill: #8f9aaf;
 }
 
-.st18 {
-    fill: #1C1815;
+.vector-path-18 {
+    fill: #1c1815;
 }
 
-.st19 {
-    fill: #F6CE10;
+.vector-path-19 {
+    fill: #f6ce10;
 }
 
-.st20 {
-    fill: #F0C917;
+.vector-path-20 {
+    fill: #f0c917;
 }
 
-.st21 {
-    fill: #BF928C;
+.vector-path-21 {
+    fill: #bf928c;
 }
 
-.st22 {
-    fill: #1C1D18;
+.vector-path-22 {
+    fill: #1c1d18;
 }
 
-.st23 {
-    fill: #2E271D;
+.vector-path-23 {
+    fill: #2e271d;
 }
 
-.st24 {
-    fill: #F8CF0C;
+.vector-path-24 {
+    fill: #f8cf0c;
 }
 
-.st25 {
+.vector-path-25 {
     fill-rule: evenodd;
     clip-rule: evenodd;
     fill: none;
-    stroke: #FFFFFF;
+    stroke: #ffffff;
     stroke-width: 9.9348;
     stroke-miterlimit: 22.9256;
 }
 
-.st26 {
+.vector-path-26 {
     fill-rule: evenodd;
     clip-rule: evenodd;
     fill: none;
@@ -68,7 +95,7 @@
     stroke-miterlimit: 22.9256;
 }
 
-.st27 {
+.vector-path-27 {
     fill-rule: evenodd;
     clip-rule: evenodd;
     stroke: #000000;
@@ -76,69 +103,103 @@
     stroke-miterlimit: 22.9256;
 }
 
-.st28 {
+.vector-path-28 {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill: #BD2826;
-    stroke: #FFFFFF;
+    fill: #bd2826;
+    stroke: #ffffff;
     stroke-width: 7.8533;
     stroke-miterlimit: 22.9256;
 }
 
-.st29 {
+.vector-path-29 {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill: #0D8A44;
-    stroke: #FFFFFF;
+    fill: #0d8a44;
+    stroke: #ffffff;
     stroke-width: 3.0658;
     stroke-miterlimit: 22.9256;
 }
 
-.st30 {
+.vector-path-30 {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill: #FFFFFF;
-    stroke: #BD2826;
+    fill: #ffffff;
+    stroke: #bd2826;
     stroke-width: 3.0658;
     stroke-miterlimit: 22.9256;
 }
 
-.st31 {
+.vector-path-31 {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill: #FFFFFF;
-    stroke: #BD2826;
+    fill: #ffffff;
+    stroke: #bd2826;
     stroke-width: 3.0654;
     stroke-miterlimit: 22.9256;
 }
 
-.st32 {
+.vector-path-32 {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill: #BD2826;
-    stroke: #FFFFFF;
+    fill: #bd2826;
+    stroke: #ffffff;
     stroke-width: 3.0658;
     stroke-miterlimit: 22.9256;
 }
 
-.st33 {
+.vector-path-33 {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill: #0D8A44;
-    stroke: #FFFFFF;
+    fill: #0d8a44;
+    stroke: #ffffff;
     stroke-width: 1.5329;
     stroke-miterlimit: 22.9256;
 }
 
-.st34 {
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
+.vector-path-34 {
+    fill: #ffffff;
+    stroke: #ffffff;
     stroke-width: 1.5329;
     stroke-miterlimit: 22.9256;
 }
 
-.st35 {
+.vector-path-35 {
     fill-rule: evenodd;
     clip-rule: evenodd;
-    fill: #0D8A44;
+    fill: #0d8a44;
+}
+
+.vector-counter-wrapper {
+    text-align: right;
+    margin: 5px auto;
+    width: 85%;
+}
+
+.vector-counter-wrapper p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.progress,
+progress[value] {
+    width: 100%;
+    border: none;
+    margin: 5px 0;
+    height: 5px;
+    display: block;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.progress::-webkit-progress-bar,
+progress[value]::-webkit-progress-bar {
+    background-color: #e2ecfe;
+    transition: 0.4s linear;
+    transition-property: background-color;
+}
+
+.progress::-webkit-progress-value,
+progress[value]::-webkit-progress-value {
+    background-color: #387ef5;
 }
